@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tabla</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-content>
+ 
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Digite un número</ion-label>
+      <ion-input [(ngModel)]="num" type="number"  placeholder="Cifra"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="operacion()" expand="block">Tabla de multiplicación</ion-button>
+
+</ion-card-content>
+
+<ion-card>
+  <ion-list>
+
+    <ion-item *ngFor="let i of array">
+      <ion-label>{{i.value}}</ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-card>
+</ion-content>

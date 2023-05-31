@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Traductor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    
+    <ion-item>
+      <ion-label position="floating">Ingrese un número:</ion-label>
+      <ion-input [(ngModel)]="num" type="number"></ion-input>
+      <p>{{numberInWords}}</p>
+    </ion-item>
+
+    <ion-button type="submit" (click)="numToWord()" expand="block">Traducir</ion-button>
+
+    
+    
+  </ion-list>
+
+</ion-content>
