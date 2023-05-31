@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./traductor.page.scss'],
 })
 export class TraductorPage implements OnInit {
+  num: any;
+  numberInWords: any;
   
   ngOnInit() {
+  }
+
+  numToWord() {
+
   }
 
 }

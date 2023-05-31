@@ -24,6 +24,12 @@ export class TablaPage implements OnInit {
    }
   }
 
+  validar() {
+    if (this.num != null) {
+      this.operacion();
+    }
+  }
+
   ngOnInit() {
   }
 }

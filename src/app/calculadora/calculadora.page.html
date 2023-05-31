@@ -29,7 +29,10 @@
     </ion-item>
     
     <br>
-    El resultado de la suma es: <br>{{resultado}}
+    <div class="resultado" *ngIf="resultado">
+      El resultado de la suma es: <br>{{resultado}}
+    </div>
+    
     
   
   </ion-card-content>

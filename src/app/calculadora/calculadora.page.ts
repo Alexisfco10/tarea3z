@@ -7,14 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculadoraPage implements OnInit {
 
-num1:string = null;
-num2:string = null;
+num1:number = null;
+num2:number = null;
 resultado:string =null;
 
   constructor() { }
 
   sumar(){
-    this.resultado = (parseInt(this.num1)+parseInt(this.num2)).toString();
+    if (this.num1 != null || this.num2 != null) {
+      this.resultado = (this.num1 + this.num2).toString();
+    }
+    
   }
 
   ngOnInit() {
